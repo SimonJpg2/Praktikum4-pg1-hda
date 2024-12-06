@@ -33,6 +33,12 @@ Fraction& Fraction::operator=(const Fraction& f)
     return *this;
 }
 
+// Zusatzaufgabe
+Fraction Fraction::operator+(const Fraction& f) { return add(f); }
+Fraction Fraction::operator-(const Fraction& f) { return subtract(f); }
+Fraction Fraction::operator*(const Fraction& f) { return multiply(f); }
+Fraction Fraction::operator/(const Fraction& f) { return divide(f); }
+
 // Methoden
 Fraction Fraction::add(const Fraction& f)
 {

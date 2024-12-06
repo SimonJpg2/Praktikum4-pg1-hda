@@ -14,6 +14,10 @@ public:
 
     // Operatoren überladen
     Fraction& operator = (const Fraction& f); // Operator "=" überladen
+    Fraction operator + (const Fraction& f);
+    Fraction operator - (const Fraction& f);
+    Fraction operator * (const Fraction& f);
+    Fraction operator / (const Fraction& f);
 
     // Methoden
     Fraction add(const Fraction& f);
