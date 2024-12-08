@@ -94,6 +94,9 @@ void Fraction::read()
     do {
         std::cout << "Nenner: ";
         std::cin >> this->denominator;
+
+        if (this->denominator == 0)
+            std::cout << "Nenner darf nicht 0 sein!" << std::endl;
     } while (this->denominator == 0);
     format();
 }
